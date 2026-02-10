@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在失去之前 Before the Loss - 王藝寰</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif TC', serif;
+            background-color: #fafafa;
+        }
+        .font-english {
+            font-family: 'Playfair Display', serif;
+        }
+        .page-content {
+            display: none;
+        }
+        .page-content.active {
+            display: block;
+        }
+        .nav-link.active {
+            color: #111;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-lg md:text-xl font-light tracking-widest uppercase">
+                <span class="lang-zh">在失去之前</span>
+                <span class="lang-en hidden font-english">Before the Loss</span>
+            </h1>
+            
+            <nav class="hidden md:flex space-x-6 text-sm">
+                <button onclick="showPage('home')" class="nav-link active py-1 transition-colors hover:text-black" data-page="home">
+                    <span class="lang-zh">首頁</span><span class="lang-en hidden">Home</span>
+                </button>
+                <button onclick="showPage('exhibition')" class="nav-link py-1 transition-colors hover:text-black" data-page="exhibition">
+                    <span class="lang-zh">展覽理念</span><span class="lang-en hidden">Exhibition</span>
+                </button>
+                <button onclick="showPage('theory')" class="nav-link py-1 transition-colors hover:text-black" data-page="theory">
+                    <span class="lang-zh">理論背景</span><span class="lang-en hidden">Theory</span>
+                </button>
+                <button onclick="showPage('fourpaths')" class="nav-link py-1 transition-colors hover:text-black" data-page="fourpaths">
+                    <span class="lang-zh">四道人生</span><span class="lang-en hidden">Four Paths</span>
+                </button>
+                <button onclick="showPage('artist')" class="nav-link py-1 transition-colors hover:text-black" data-page="artist">
+                    <span class="lang-zh">關於藝術家</span><span class="lang-en hidden">Artist</span>
+                </button>
+            </nav>
+
+            <button onclick="toggleLanguage()" class="border border-gray-300 px-4 py-1 rounded-full hover:bg-black hover:text-white transition-all text-xs">
+                <span id="lang-btn-text">EN</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 px-6 max-w-4xl mx-auto min-h-screen">
+
+        <section id="home" class="page-content active text-center space-y-8">
+            <h2 class="text-4xl md:text-5xl font-light leading-tight">
+                <span class="lang-zh">在失去之前：預期的告別</span>
+                <span class="lang-en hidden font-english">Before the Loss: The Anticipated Farewell</span>
+            </h2>
+            <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                <p>
+                    <span class="lang-zh">每當祖母再次因為病情反覆進出醫院，我總在日常的細碎瞬間中，提前預演失去的畫面。</span>
+                    <span class="lang-en hidden">Whenever my grandmother was hospitalized again, I rehearsed the experience of loss in everyday mundane moments.</span>
+                </p>
+                <p>
+                    <span class="lang-zh">哀傷是無聲的綵排，在心裡一遍遍上演，讓我提早哭泣和道別，也提早學會珍惜現在的每一刻。</span>
+                    <span class="lang-en hidden">Grief is a silent rehearsal—played again and again in the heart, allowing me to weep and bid farewell early.</span>
+                </p>
+            </div>
+        </section>
+
+        <section id="exhibition" class="page-content space-y-10">
+            <h2 class="text-3xl font-light border-b pb-4 inline-block">
+                <span class="lang-zh">展覽理念</span><span class="lang-en hidden font-english">Exhibition Concept</span>
+            </h2>
+            <div class="space-y-6 text-lg leading-loose text-gray-700">
+                <p>
+                    <span class="lang-zh">本系列作品《Memento Mori》以「預期性悲傷」為核心，通過五個場景，具象化我在面對祖母反覆進出醫院的歲月中，內心所經歷的五個非線性情緒階段。</span>
+                    <span class="lang-en hidden">The series 'Memento Mori' centers on 'anticipatory grief'—five scenes materializing the nonlinear emotional phases I experienced during my grandmother's illness.</span>
+                </p>
+                <p>
+                    <span class="lang-zh">這不僅是個人的哀悼，更是一場視覺冥想，探討我們如何緊握、如何放手，以及如何在兩者間的空隙中尋得意義。</span>
+                    <span class="lang-en hidden">It is a visual meditation on how we hold on, how we let go, and how we find meaning in the space between.</span>
+                </p>
+            </div>
+        </section>
+
+        <section id="theory" class="page-content space-y-10">
+            <h2 class="text-3xl font-light">
+                <span class="lang-zh">理論背景：預期性悲傷</span><span class="lang-en hidden font-english">Theoretical Framework</span>
+            </h2>
+            <div class="grid gap-8">
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <h3 class="text-xl font-medium mb-2"><span class="lang-zh">否認 Denial</span><span class="lang-en hidden">Denial</span></h3>
+                    <p class="text-gray-600"><span class="lang-zh">一種防禦性暫避，讓人以可承受的速度接受現實。</span><span class="lang-en hidden">A psychological buffer that allows individuals to accept reality at a manageable pace.</span></p>
+                </div>
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <h3 class="text-xl font-medium mb-2"><span class="lang-zh">憤怒 Anger</span><span class="lang-en hidden">Anger</span></h3>
+                    <p class="text-gray-600"><span class="lang-zh">對不公與無力的情緒反應，核心在於深刻的無力感。</span><span class="lang-en hidden">Reflecting a profound sense of unfairness and powerlessness.</span></p>
+                </div>
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <h3 class="text-xl font-medium mb-2"><span class="lang-zh">討價還價 Bargaining</span><span class="lang-en hidden">Bargaining</span></h3>
+                    <p class="text-gray-600"><span class="lang-zh">試圖透過與更高力量的談判來延後不可避免的結果。</span><span class="lang-en hidden">Seeking to regain control and postpone the inevitable through negotiation.</span></p>
+                </div>
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <h3 class="text-xl font-medium mb-2"><span class="lang-zh">抑鬱 Depression</span><span class="lang-en hidden">Depression</span></h3>
+                    <p class="text-gray-600"><span class="lang-zh">不再是憤怒，而是對即將到來的分離感到深沉哀傷。</span><span class="lang-en hidden">Appropriate, preparatory grief for the impending final separation.</span></p>
+                </div>
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <h3 class="text-xl font-medium mb-2"><span class="lang-zh">接受 Acceptance</span><span class="lang-en hidden">Acceptance</span></h3>
+                    <p class="text-gray-600"><span class="lang-zh">不是快樂，而是與現實達成和解，平靜地面對。</span><span class="lang-en hidden">Coming to terms with reality—a period of quiet preparation and peace.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="fourpaths" class="page-content space-y-12">
+            <div class="text-center space-y-4">
+                <h2 class="text-3xl font-light"><span class="lang-zh">四道人生</span><span class="lang-en hidden font-english">The Four Paths of Life</span></h2>
+                <p class="italic text-gray-500"><span class="lang-zh">善別，始於善生。</span><span class="lang-en hidden">A good farewell begins with living well.</span></p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-2">
+                    <h3 class="text-xl font-bold tracking-widest"><span class="lang-zh">道愛</span><span class="lang-en hidden font-english">Love</span></h3>
+                    <p class="text-gray-600"><span class="lang-zh">將情感化為清晰、真摯的言語或行動，明確地傳遞給所愛之人。</span><span class="lang-en hidden">Expressing affection through sincere words and actions.</span></p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-xl font-bold tracking-widest"><span class="lang-zh">道謝</span><span class="lang-en hidden font-english">Gratitude</span></h3>
+                    <p class="text-gray-600"><span class="lang-zh">誠心感謝生命中的幫助與陪伴，讓善意成為彼此的養分。</span><span class="lang-en hidden">Heartfelt thanks for the support and presence in one's life.</span></p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-xl font-bold tracking-widest"><span class="lang-zh">道歉</span><span class="lang-en hidden font-english">Forgiveness</span></h3>
+                    <p class="text-gray-600"><span class="lang-zh">放下驕傲，尋求和解；釋懷傷痛，修復生命中的裂痕。</span><span class="lang-en hidden">Reconciling through humility and releasing past hurts.</span></p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-xl font-bold tracking-widest"><span class="lang-zh">道別</span><span class="lang-en hidden font-english">Farewell</span></h3>
+                    <p class="text-gray-600"><span class="lang-zh">不是消極的永訣，而是帶著愛，繼續各自的旅程。</span><span class="lang-en hidden">A meaningful goodbye to carry forward with love.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="artist" class="page-content">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="md:col-span-1">
+                    <h2 class="text-2xl font-light mb-6"><span class="lang-zh">關於藝術家</span><span class="lang-en hidden">Artist Bio</span></h2>
+                    <p class="text-xl mb-1">王藝寰</p>
+                    <p class="text-gray-500 italic font-english">Wong Ngai Wan (Kimberli)</p>
+                </div>
+                <div class="md:col-span-2 space-y-8 text-gray-700 leading-loose">
+                    <p>
+                        <span class="lang-zh">王藝寰 (Kimberli) 是香港教育大學藝術系學生，專精於混合媒介創作。其創作聚焦香港本土文化，致力喚起社會對城市重要議題的關注。</span>
+                        <span class="lang-en hidden">KIMBERLI Wong Ngai Wan is an art student at EdUHK specializing in mixed-media. Her work focuses on Hong Kong's local culture and social stories.</span>
+                    </p>
+                    <div class="bg-gray-50 p-8 border-l-4 border-gray-200">
+                        <h4 class="font-bold mb-4 uppercase text-xs tracking-widest text-gray-400">
+                            <span class="lang-zh">藝術家自述</span><span class="lang-en hidden">Artist Statement</span>
+                        </h4>
+                        <p class="italic text-gray-600">
+                            <span class="lang-zh">「我的創作探索人類情感中抽象的失落過程。裝置《準備失去》並非誇張的哀悼，而是心靈過渡期中靜默而執著的印記。」</span>
+                            <span class="lang-en hidden">"My work explores the abstract processes of loss. These are not grand gestures of mourning, but the quiet, stubborn evidence of a heart in transition."</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="px-6 py-12 border-t border-gray-100 text-xs text-gray-400 text-center space-y-3">
+        <p>© 2026 Wong Ngai Wan 王藝寰. All Rights Reserved.</p>
+        <p class="tracking-widest italic">
+            <span class="lang-zh">當下，是最誠實的創作空間。</span>
+            <span class="lang-en hidden">The present moment is the most truthful space for creation.</span>
+        </p>
+    </footer>
+
+    <script>
+        // 確保頁面加載時正確顯示
+        document.addEventListener('DOMContentLoaded', function() {
+            // 確保首頁顯示
+            showPage('home');
+        });
+        
+        // 語言切換邏輯
+        let currentLang = 'zh';
+        function toggleLanguage() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            const zhElements = document.querySelectorAll('.lang-zh');
+            const enElements = document.querySelectorAll('.lang-en');
+            const btnText = document.getElementById('lang-btn-text');
+
+            if (currentLang === 'en') {
+                zhElements.forEach(el => el.classList.add('hidden'));
+                enElements.forEach(el => el.classList.remove('hidden'));
+                btnText.innerText = '中文';
+            } else {
+                zhElements.forEach(el => el.classList.remove('hidden'));
+                enElements.forEach(el => el.classList.add('hidden'));
+                btnText.innerText = 'EN';
+            }
+        }
+
+        // 頁面切換邏輯
+        function showPage(pageId) {
+            // 隱藏所有頁面
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(p => p.classList.remove('active'));
+
+            // 顯示目標頁面
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            } else {
+                // 如果找不到頁面，顯示首頁
+                document.getElementById('home').classList.add('active');
+            }
+
+            // 更新導覽列樣式
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('data-page') === pageId) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+
+            // 切換頁面後自動捲回頂部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
